@@ -1,7 +1,5 @@
-from .extendedmodlog import ExtendedModLog
+from .hockey import Hockey
 
 
-async def setup(bot):
-    cog = ExtendedModLog(bot)
-    await cog.initialize()
-    bot.add_cog(cog)
+def setup(bot):
+    bot.add_cog(Hockey(bot))
