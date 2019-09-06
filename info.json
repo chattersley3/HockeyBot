@@ -1,5 +1,6 @@
 {
     "author" : [
+        "palmtree5",
         "TrustyJAID"
     ],
     "bot_version" : [
@@ -7,29 +8,27 @@
         0,
         0
     ],
-    "description" : "Gather hockey information from nhl.com and display in discord.",
+    "description" : "Gets the latest Tweet from twitter accounts and posts them in the specified channels",
     "disabled" : false,
     "hidden" : false,
-    "install_msg" : "Use `[p]hockey`, `[p]hockeyset` and `[p]gdc` to see what commands are available. If you want the emojis to work please ask <@218773382617890828> to add your bot to his server hosting the emojis.",
+    "install_msg" : "`[p]tweets` to see commands. Make sure to do pip3 install tweepy before using this plugin. Do [p]tweetset to find commands for setting consumer key and secret and access token and secret. If you need these, visit https://apps.twitter.com/ and create an application. This plugin only needs read only permissions as it will only read public information",
     "min_python_version" : [
         3,
         6,
         2
     ],
-    "name" : "Hockey",
+    "name" : "Tweets",
     "permissions" : [
-        "embed_links",
-        "manage_messages",
-        "manage_channels"
+        "embed_links"
     ],
     "required_cogs" : [],
     "requirements" : [
-        "pytz"
+        "tweepy"
     ],
-    "short" : "Hockey commands",
+    "short" : "Cog for getting info from Twitter",
     "tags" : [
-        "hockey",
-        "nhl"
+        "twitter",
+        "tweets"
     ],
     "type" : "COG"
 }
